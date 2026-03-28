@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/600x400_arthrex.png" alt="Arthrex" width="200" />
+<img src="sos-arthrex-white.png" alt="Arthrex" width="200" />
 
-# Patient congratulations — responsive web experience
+# Patient Call-To-Life — responsive web experience
 
 **A supportive, tablet-friendly page for patients after surgery — from Arthrex.**
 
