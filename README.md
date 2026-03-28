@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="sos-arthrex-white.png" alt="Arthrex" width="200" />
+<img src="assets/sos-arthrex-white.png" alt="Arthrex" width="200" />
 
 # Patient Call-To-Life — responsive web experience
 
@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-    <img src="tablet-portrait.png" alt="app-preview" width="400">
+    <img src="assets/tablet-portrait.png" alt="app-preview" width="400">
 </div>
 
 ---
