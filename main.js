@@ -71,7 +71,7 @@
     {
       start: 0,
       text:
-        "From all of us at Arthrex: heartfelt congratulations on the success of your surgery. You’ve taken a brave step toward healing.",
+        "From all of us at Arthrex: Congratulations on the success of your surgery. You’ve taken a brave step toward healing.",
     },
     {
       start: 7.5,
