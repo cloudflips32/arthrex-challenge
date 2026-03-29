@@ -27,8 +27,5 @@
   </g>
   <text x="640" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="700" fill="#fff">Your care team</text>
   <text x="640" y="470" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#fff" opacity="0.92">Hospital · Nursing · Physicians</text>
-  <text x="640" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#fff" opacity="0.95">Tap play to begin · 0:30</text>
-  <g transform="translate(640, 580)">
-    <polygon points="-36,-20 36,0 -36,20" fill="#fff" opacity="0.95"/>
-  </g>
+  <text x="640" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#fff" opacity="0.95">Tap play to begin</text>
 </svg>

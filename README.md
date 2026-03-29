@@ -42,7 +42,7 @@ Header and footer carry the **Arthrex** identity, **aligned** with page gutters 
 | :---: | --- |
 | 📱 | **Responsive layout** — readable on phone, tablet, and desktop; shared `--page-gutter` and content max-width. |
 | 🍔 | **Hamburger menu** — navigation links (Your message / Video / Recovery) in a **right-aligned** dropdown. |
-| 🎬 | **Video playlist** — three **10s** segments (hospital / care imagery) for a **30s** total; **Replay** button; overlay text **only while playing**. |
+| 🎬 | **Single message video** — `assets/welcome-back.mp4` with native **controls**; timed overlay copy **only while playing** (`segments` in `main.js`). |
 | 🎨 | **Brand palette** — `#46ACC2`, `#498C8A`, `#4D4730` used across UI and graphics. |
 | 🔗 | **Footer social links** — LinkedIn, Facebook, Instagram, YouTube, X (opens in a new tab). |
 | ♿ | **Accessibility** — semantic landmarks, `aria-*` on menu and video, `alt` text on images, focus styles. |
@@ -71,20 +71,21 @@ Header and footer carry the **Arthrex** identity, **aligned** with page gutters 
 arthrex/
 ├── index.html          # Page structure, header, main, footer
 ├── styles.css          # Layout, responsive rules, Arthrex colors
-├── main.js             # Menu, video playlist, overlay timing, replay
+├── main.js             # Menu, timed video overlay copy
 ├── README.md           # This file
 └── assets/
     ├── arthrex-logo.svg    # Vector logo (footer / reference)
     ├── 600x400_arthrex.png # Header logo
+    ├── welcome-back.mp4    # Main message video (add your file)
     ├── video-poster.svg    # Video poster art
-    └── family-hospital.jpg # Support section photo (see attribution)
+    └── patient-doctor.jpg  # Support section photo (see attribution in HTML)
 ```
 
 ---
 
 ## Media & attribution
 
-- **Video clips** — [Mixkit](https://mixkit.co/) (see comments in `index.html` / `main.js`); replace with your own **MP4** when production-ready.  
+- **Video** — Local file `assets/welcome-back.mp4` (see `index.html`). Optional: `scripts/combine-patient-video.ps1` can build a combined MP4 from Mixkit sources.  
 - **Support photo** — Pexels (Kampus Production); comment in `index.html` points to the asset page.  
 - **Arthrex logos** — Use official brand assets from Arthrex for production; filenames here are placeholders for layout.
 
@@ -92,7 +93,7 @@ arthrex/
 
 ## Customization tips
 
-- **Swap the video** — Edit `<video>` / `clips` in `main.js` and adjust `TARGET_DURATION_SEC` if your master file is not 30 seconds.  
+- **Swap the video** — Set `src` on the `<video>` in `index.html`. Adjust `segments[].start` in `main.js` if the runtime or beat of your MP4 changes.  
 - **Social URLs** — Update `href` values in the footer in `index.html` to match current Arthrex channels.  
 - **Copy** — Hero, overlay segments, and support copy are in `index.html` and `main.js` (`segments` array).
 
